@@ -7,7 +7,7 @@ const { body, validationResult } = require('express-validator/check');
 
 const router = express.Router();
 
-router.get('/', auth.connect(basic), (req, res) => {
+router.get('/', (req, res) => {
     res.send('Hello World');
 });
 
